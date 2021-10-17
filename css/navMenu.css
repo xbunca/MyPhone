@@ -1,0 +1,52 @@
+header {
+    height: 30%;
+}
+
+#nav_menu{
+    margin-left: 25%;
+    margin-right: 25%;
+    display: grid;
+    grid-template-columns: 0.5fr 1.25fr;
+}
+
+#logo_div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#logo_div img{
+
+}
+
+#right_div{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#right_div_content {
+
+}
+
+#title_div{
+    display: block;
+}
+
+#right_div h1{
+    text-align: center;
+}
+
+#nav_div{
+
+}
+
+#nav_div ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+#nav_div ul li{
+    display: inline-block;
+}
+
