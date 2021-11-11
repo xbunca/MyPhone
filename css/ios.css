@@ -1,4 +1,61 @@
-body{
+body {
     background-image: url("../imgs/ios_back.jpg");
     background-repeat: no-repeat;
+    font-family: SF-REG;
+    background-size: 100%;
+}
+
+#content {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: "g1 g2" "g3 g4";
+}
+
+.grid_left {
+    grid-area: g1;
+}
+
+.grid_left_top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid_left_top img {
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+}
+
+.grid_left_top h3 {
+    text-align: center;
+    padding-top: 6%;
+}
+
+.grid_left_list {
+    text-align: center;
+}
+
+.grid_left_list ul {
+    list-style: none;
+}
+
+.grid_right {
+    grid-area: g4;
+}
+
+.grid_right img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.grid_right a {
+    text-align: center;
+    display: block;
 }

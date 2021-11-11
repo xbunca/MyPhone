@@ -2,4 +2,58 @@ body {
     background-image: url("../imgs/accessories_back.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    font-family: SF-REG;
+    background-size: 100%;
+}
+
+#content {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.accessories_collection {
+    display: grid;
+    grid-template-areas: "c1 c2" "c3 c4";
+}
+
+.accessories_collection .accessories_collection_cell:nth-child(1) {
+    grid-area: c1;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.accessories_collection .accessories_collection_cell:nth-child(2) {
+    grid-area: c2;
+    border-bottom: 2px solid black;
+}
+
+.accessories_collection .accessories_collection_cell:nth-child(3) {
+    grid-area: c3;
+    border-right: 2px solid black;
+}
+
+.accessories_collection .accessories_collection_cell:nth-child(4) {
+    grid-area: c4;
+}
+
+.accessories_collection_cell {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.accessories_collection_cell_left {
+
+}
+
+.accessories_collection_cell_left img {
+    display: block;
+    margin: 6% auto;
+}
+
+.accessories_collection_cell_right {
+
+}
+
+.accessories_collection_cell_right h3 {
+    text-align: center;
 }

@@ -1,13 +1,16 @@
 body {
     background-image: url("../imgs/home_back.jpg");
     background-repeat: no-repeat;
+    font-family: SF-REG;
+    background-size: 100%;
 }
+
 #content {
     margin-left: 15%;
     margin-right: 15%;
 }
 
-.index_content_item{
+.index_content_item {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }

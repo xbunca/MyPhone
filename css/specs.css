@@ -1,6 +1,8 @@
-body{
+body {
     background-image: url("../imgs/specs_back.jpg");
     background-repeat: no-repeat;
+    font-family: SF-REG;
+    background-size: 100%;
 }
 
 #content {
@@ -33,6 +35,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.specs_table_row_left_component img {
+    display: block;
+    margin-top: 6%;
 }
 
 .specs_table_row_left_component_name {

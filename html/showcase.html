@@ -1,56 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>MyPhone-Showcase</title>
-  <link rel="stylesheet" href="../css/navMenu.css">
-  <link rel="stylesheet" href="../css/footer.css">
+    <meta charset="UTF-8">
+    <title>MyPhone-Showcase</title>
+    <link rel="stylesheet" href="../css/navMenu.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+
+    <link rel="stylesheet" href="../css/showcase.css">
 </head>
 <body>
 <header>
-  <div id="nav_menu">
-    <div id="logo_div">
-      <img src="../imgs/logo.png">
-    </div>
-    <div id="right_div">
-      <div id="right_div_content">
-        <div id="title_div">
-          <h1>iPhone 7 Plus</h1>
+    <div id="nav_menu">
+        <div id="logo_div">
+            <img src="../imgs/logo.png">
         </div>
-        <div id="nav_div">
-          <ul>
-            <a href="index.html">
-              <li>Home</li>
-            </a>
-            <a href="specs.html">
-              <li>Specs</li>
-            </a>
-            <a href="accessories.html">
-              <li>Accessories</li>
-            </a>
-            <a href="ios.html">
-              <li>iOS</li>
-            </a>
-            <a href="showcase.html">
-              <li>Showcase</li>
-            </a>
-            <li>Reviews</li>
-            <li>Contact</li>
-          </ul>
+        <div id="right_div">
+            <div id="right_div_content">
+                <div id="title_div">
+                    <h1>iPhone 7 Plus</h1>
+                </div>
+                <div id="nav_div">
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <a href="specs.html">Specs</a>
+                        <a href="accessories.html">Accessories</a>
+                        <a href="ios.html">iOS</a>
+                        <a href="showcase.html">Showcase</a>
+                        <a>Reviews</a>
+                        <a>Contact</a>
+                    </nav>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </header>
 
 <div id="content">
+    <div class="grid">
+        <div class="video_c">
+            <h3>Info</h3>
+            <video controls>
+                <source src="movie.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="right_c">
+            <div class="right_c_ringtone_cell">
+                <h3>Ringtones</h3>
+                <div class="right_c_ringtone_cell_audio">
+                    <p>Ringtone</p>
+                    <audio controls>
+                        <source src="horse.mp3" type="audio/mpeg">
+                    </audio>
+                    <p>Ringtone</p>
+                    <audio controls>
+                        <source src="horse.mp3" type="audio/mpeg">
+                    </audio>
+                    <p>Ringtone</p>
+                    <audio controls>
+                        <source src="horse.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            <div class="right_c_image_cell">
+                <h3>Alarm</h3>
+                <img src="/imgs/alarm.PNG">
+            </div>
+            <div class="right_c_image_cell">
+                <h3>Lock</h3>
+                <img src="/imgs/lock.PNG">
+            </div>
+            <div class="right_c_info_cell">
+                <h3>Info</h3>
+                <ul>
+                    <li>h</li>
+                    <li>d</li>
+                    <li>f</li>
+                </ul>
+            </div>
 
+        </div>
+    </div>
 </div>
 
 <footer>
-  <div>
-    <p>© Dávid Bunca, 2021</p>
-  </div>
+    <div>
+        <p>© Dávid Bunca, 2021</p>
+    </div>
 </footer>
 </body>
 </html>
