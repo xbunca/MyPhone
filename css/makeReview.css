@@ -1,0 +1,47 @@
+body {
+    font-family: SF-REG;
+    background-size: 100%;
+}
+
+#content {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.review_top_form {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.name_form_div {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.image_form_div {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.review_bottom_form {
+
+}
+
+.review_bottom_form_moving {
+    margin-left: 17.5%;
+    margin-right:  17.5%;
+}
+
+.review_bottom_form textarea {
+    resize: none;
+    width: 99%;
+}
+
+.review_bottom_form #makeButton {
+    display: block;
+    margin-left: auto;
+}

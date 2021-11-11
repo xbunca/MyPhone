@@ -1,0 +1,54 @@
+body {
+    font-family: SF-REG;
+    background-size: 100%;
+}
+
+#content {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.contact_div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.photo_div img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.map_div iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact_form_div_in {
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.name_div, .email_div {
+    display: inline-block;
+    width: 49%;
+}
+
+.name_div input, .email_div input {
+    width: 90%;
+    height: 30px;
+}
+
+.contact_form_div_in textarea {
+    resize: none;
+    width: 100%;
+}
+.contact_form_div_in #sendButton {
+    display: block;
+    margin-left: 96%;
+}

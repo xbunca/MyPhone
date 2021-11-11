@@ -47,5 +47,12 @@ header {
 
 #nav_div nav a {
     display: inline-block;
+    color: red;
+    background-color: white;
+    text-decoration: none;
+}
+
+#nav_div nav a:hover {
+    background-color: black;
 }
 
