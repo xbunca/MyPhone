@@ -1,5 +1,5 @@
 body {
-    background-image: url("../imgs/accessories_back.jpg");
+    background-image: url("../assets/imgs/accessories_back.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     font-family: SF-REG;
@@ -48,6 +48,8 @@ body {
 .accessories_collection_cell_left img {
     display: block;
     margin: 6% auto;
+    width: 300px;
+    height: 300px;
 }
 
 .accessories_collection_cell_right {

@@ -1,5 +1,5 @@
 body {
-    background-image: url("../imgs/specs_back.jpg");
+    background-image: url("../assets/imgs/specs_back.jpg");
     background-repeat: no-repeat;
     font-family: SF-REG;
     background-size: 100%;
@@ -40,6 +40,8 @@ body {
 .specs_table_row_left_component img {
     display: block;
     margin-top: 6%;
+    width: 100px;
+    height: 100px;
 }
 
 .specs_table_row_left_component_name {

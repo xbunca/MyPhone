@@ -54,5 +54,6 @@ header {
 
 #nav_div nav a:hover {
     background-color: black;
+    color: white;
 }
 
