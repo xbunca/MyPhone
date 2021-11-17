@@ -16,7 +16,8 @@ body {
 }
 
 .index_content_item img {
-
+    width: 400px;
+    height: 400px;
 }
 
 .index_content_item_image {
