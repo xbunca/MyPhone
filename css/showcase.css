@@ -39,7 +39,7 @@ body {
 }
 
 .right_c_ringtone_cell {
-
+    text-align: center;
 }
 
 .right_c_ringtone_cell_audio {
@@ -59,7 +59,7 @@ body {
 }
 
 .right_c_image_cell {
-
+    margin-bottom: 1%;
 }
 
 .right_c_image_cell img {

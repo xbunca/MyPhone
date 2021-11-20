@@ -3,8 +3,8 @@ header {
 }
 
 #nav_menu {
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 2%;
+    margin-right: 17%;
     display: grid;
     grid-template-columns: 0.5fr 1.25fr;
 }
@@ -17,6 +17,11 @@ header {
 
 #logo_div img {
 
+}
+
+#logo_div img:hover {
+    animation-name: logo_rotate;
+    animation-duration: 1s;
 }
 
 #right_div {
@@ -35,6 +40,7 @@ header {
 
 #right_div h1 {
     text-align: center;
+    font-size: 300%;
 }
 
 #nav_div {
@@ -50,10 +56,57 @@ header {
     color: red;
     background-color: white;
     text-decoration: none;
+    width: 110px;
+    height: 25px;
+    text-align: center;
+    border: solid black 2px;
+    padding-top: 1%;
+    margin-top: 1%;
+    border-radius: 5px 20px 5px 20px;
 }
 
 #nav_div nav a:hover {
     background-color: black;
     color: white;
+}
+
+#content {
+    margin-bottom: 1%;
+}
+
+#content .button{
+    display: block;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    width: 110px;
+    height: 25px;
+    text-align: center;
+    border: solid black 2px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 1%;
+    margin-top: 1%;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#content .button:hover{
+    background-color: black;
+    color: white;
+}
+
+#content img {
+    animation-name: image_scale;
+    animation-duration: 1s;
+}
+
+@keyframes image_scale {
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+
+@keyframes logo_rotate {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
 }
 
