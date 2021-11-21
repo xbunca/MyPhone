@@ -14,7 +14,7 @@ body {
 
 .reviews_grid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     border-bottom: 2px solid black;
     border-top: 2px solid black;
 }
@@ -68,4 +68,17 @@ body {
 
 .dislikes_div_top {
     border: 2px solid black;
+}
+
+@media only screen and (max-width: 1000px) {
+    .reviews_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .reviews_grid .review_cell:nth-child(2) {
+        border-left: none;
+        border-right: none;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
 }

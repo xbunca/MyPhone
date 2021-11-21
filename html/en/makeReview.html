@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../../css/navMenu.css">
     <link rel="stylesheet" href="../../css/footer.css">
     <link rel="stylesheet" href="../../css/fonts.css">
+    <link rel="stylesheet" href="../../css/forms.css">
 
     <link rel="stylesheet" href="../../css/makeReview.css">
 </head>
@@ -13,7 +14,7 @@
 <header>
     <div id="nav_menu">
         <div id="logo_div">
-            <img src="../../assets/imgs/logo.png">
+            <img src="../../assets/imgs/logo.svg">
         </div>
         <div id="right_div">
             <div id="right_div_content">
@@ -27,7 +28,7 @@
                         <a href="accessories.html">Accessories</a>
                         <a href="ios.html">iOS</a>
                         <a href="showcase.html">Showcase</a>
-                        <a href="reviews.html">Reviews</a>
+                        <a href="reviews.html" class="selected">Reviews</a>
                         <a href="contact.html">Contact</a>
                         <a href="../sk/makeReview.html">SK</a>
                     </nav>
@@ -44,7 +45,7 @@
             <div class="review_top_form">
                 <div class="name_form_div">
                     <label for="nameField">Name</label><br>
-                    <input type="text" id="nameField">
+                    <input type="text" id="nameField" class="form_field">
                 </div>
                 <div class="image_form_div">
                     <label for="reviewImage">Profile picture</label><br>
@@ -55,13 +56,13 @@
             <div class="review_bottom_form">
                 <div class="review_bottom_form_moving">
                     <label for="reviewRating">Rating:</label>
-                    <input type="number" id="reviewRating" max="5" min="1" value="1">
+                    <input type="number" id="reviewRating" max="5" min="1" value="1" class="form_field">
 
                     <br><label for="reviewArea">Review</label><br>
-                    <textarea id="reviewArea" rows="15">
+                    <textarea id="reviewArea" rows="15" class="form_field">
 
                 </textarea><br>
-                    <input type="button" id="makeButton" value="Make">
+                    <input type="button" id="makeButton" value="Make" class="form_button">
                 </div>
             </div>
         </form>

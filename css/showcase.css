@@ -71,3 +71,10 @@ body {
     max-width: 300px;
     max-height: 500px;
 }
+
+@media only screen and (max-width: 1000px) {
+    .grid {
+        margin-top: 1%;
+        grid-template-columns: 1fr;
+    }
+}

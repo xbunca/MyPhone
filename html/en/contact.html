@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../../css/navMenu.css">
     <link rel="stylesheet" href="../../css/footer.css">
     <link rel="stylesheet" href="../../css/fonts.css">
+    <link rel="stylesheet" href="../../css/forms.css">
 
     <link rel="stylesheet" href="../../css/contact.css">
 </head>
@@ -13,7 +14,7 @@
 <header>
     <div id="nav_menu">
         <div id="logo_div">
-            <img src="../../assets/imgs/logo.png">
+            <img src="../../assets/imgs/logo.svg">
         </div>
         <div id="right_div">
             <div id="right_div_content">
@@ -28,7 +29,7 @@
                         <a href="ios.html">iOS</a>
                         <a href="showcase.html">Showcase</a>
                         <a href="reviews.html">Reviews</a>
-                        <a href="contact.html">Contact</a>
+                        <a href="contact.html" class="selected">Contact</a>
                         <a href="../sk/contact.html">SK</a>
                     </nav>
                 </div>
@@ -62,19 +63,19 @@
             <div class="contact_form_div_in">
                 <div class="name_div">
                     <label for="nameLabel">Name</label><br>
-                    <input type="text" id="nameLabel"><br>
+                    <input type="text" id="nameLabel" class="form_field"><br>
                 </div>
                 <div class="email_div">
                     <label for="emailLabel">Email</label><br>
-                    <input type="email" id="emailLabel"><br>
+                    <input type="email" id="emailLabel" class="form_field"><br>
                 </div>
                 <br>
 
                 <label for="messageArea">Message</label><br>
-                <textarea id="messageArea" rows="15">
+                <textarea id="messageArea" rows="15" class="form_field">
 
                 </textarea><br>
-                <input type="button" id="sendButton" value="Send">
+                <input type="button" id="sendButton" value="Send" class="form_button">
             </div>
         </form>
     </div>

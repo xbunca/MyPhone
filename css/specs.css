@@ -1,8 +1,9 @@
 body {
-    background-image: url("../assets/imgs/specs_back.jpg");
+    background-image: url("../assets/imgs/specs_back.png");
     background-repeat: no-repeat;
     font-family: SF-REG;
-    background-size: 100%;
+    background-position: right top;
+    background-size: 20%;
 }
 
 #content {

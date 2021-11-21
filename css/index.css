@@ -1,8 +1,9 @@
 body {
-    background-image: url("../assets/imgs/home_back.jpg");
+    background-image: url("../assets/imgs/home_back.png");
     background-repeat: no-repeat;
     font-family: SF-REG;
-    background-size: 100%;
+    background-position: left top;
+    background-size: 20%;
 }
 
 #content {
@@ -16,8 +17,9 @@ body {
 }
 
 .index_content_item img {
-    width: 400px;
-    height: 400px;
+    width: 380px;
+    height: 380px;
+    box-shadow: 0 0 4px 4px red;
 }
 
 .index_content_item_image {
@@ -31,5 +33,11 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+@media only screen and (max-width: 1700px) {
+    .index_content_item img {
+        transform: scale(0.8);
+    }
 }
 
