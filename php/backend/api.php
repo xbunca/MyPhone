@@ -16,13 +16,25 @@
     function makeAReview($name, $rating, $review, $image)
     {
         global $conn;
-        $sql = "INSERT INTO phone_reviews (name, rating, review) VALUES (?,?,?)";
-        if ($conn->prepare($sql)->execute([$name, $rating, $review])) {
-            $path = '../../assets/imgs/reviews/realReviews/';
-            $id = $conn->lastInsertId();
-            $image["name"] = $id.".jpg";
-            $path = $path.$image["name"];
-            move_uploaded_file($image["tmp_name"], $path);
+        $imageContent = null;
+        $sql = "INSERT INTO phone_reviews (name, rating, review, image) VALUES (?,?,?,?)";
+
+        if (!empty($tmpName=$image["tmp_name"])){
+            $imageContent = file_get_contents($tmpName);
+        }
+
+        if ($conn->prepare($sql)->execute([$name, $rating, $review, $imageContent])) {
+            return true;
+        }
+        return false;
+    }
+
+    function sendEmail($name, $email, $message)
+    {
+        global $conn;
+        $sql = "INSERT INTO emails (name, email, message) VALUES (?,?,?)";
+
+        if ($conn->prepare($sql)->execute([$name, $email, $message])) {
             return true;
         }
         return false;
@@ -49,6 +61,30 @@
             $stmt->close();
         } else {
             return 0;
+        }
+    }
+
+    function getReviewImage($id){
+        global $conn;
+        $sql = "SELECT image FROM phone_reviews WHERE id=?";
+
+        if ($stmt = $conn->prepare($sql)) {
+            $stmt->bindValue(1, $id);
+            if ($stmt->execute()) {
+                if ($stmt->rowCount() > 0) {
+                    if ($data = $stmt->fetchAll()) {
+                        return $data[0];
+                    }
+                    return null;
+                } else {
+                    return null;
+                }
+            } else {
+                return null;
+            }
+            $stmt->close();
+        } else {
+            return null;
         }
     }
 

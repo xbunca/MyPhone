@@ -4,7 +4,6 @@
     $GLOBALS["onSite"] = 5;
     $rated = $_SESSION["siteRated"];
 
-    $path = '../../assets/imgs/reviews/realReviews/';
     $review1 = getRandomReview();
     $review2 = getRandomReview();
     $review3 = getRandomReview();
@@ -29,7 +28,15 @@
         <div class="reviews_grid">
             <div class="review_cell">
                 <h3><?php echo $review1["name"]; ?></h3>
-                <img src="<?php echo $path.$review1["id"].".jpg"; ?>" class="profile_picture">
+
+                <?php
+                    if (!empty($review1["image"])){
+                        echo '<img src="../../php/functions/displayImage.php?id='.$review1["id"].'" class="profile_picture">';
+                    } else {
+                        echo '<img src="../../assets/imgs/reviews/default.png" class="profile_picture">';
+                    }
+                ?>
+
                 <?php
                     switch ($review1["rating"]){
                         case 1:
@@ -53,7 +60,15 @@
             </div>
             <div class="review_cell">
                 <h3><?php echo $review2["name"]; ?></h3>
-                <img src="<?php echo $path.$review2["id"].".jpg"; ?>" class="profile_picture">
+
+                <?php
+                if (!empty($review2["image"])){
+                    echo '<img src="../../php/functions/displayImage.php?id='.$review2["id"].'" class="profile_picture">';
+                } else {
+                    echo '<img src="../../assets/imgs/reviews/default.png" class="profile_picture">';
+                }
+                ?>
+
                 <?php
                 switch ($review2["rating"]){
                     case 1:
@@ -77,7 +92,15 @@
             </div>
             <div class="review_cell">
                 <h3><?php echo $review3["name"]; ?></h3>
-                <img src="<?php echo $path.$review3["id"].".jpg"; ?>" class="profile_picture">
+
+                <?php
+                if (!empty($review3["image"])){
+                    echo '<img src="../../php/functions/displayImage.php?id='.$review3["id"].'" class="profile_picture">';
+                } else {
+                    echo '<img src="../../assets/imgs/reviews/default.png" class="profile_picture">';
+                }
+                ?>
+
                 <?php
                 switch ($review3["rating"]){
                     case 1:

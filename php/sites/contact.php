@@ -1,6 +1,15 @@
 <?php
+    include '../../php/backend/api.php';
     include '../../php/backend/languages.php';
     $GLOBALS["onSite"] = 6;
+
+    if (isset($_POST["send"])){
+        $askerName = $_POST["nameField"];
+        $askerEmail = $_POST["emailField"];
+        $askerMessage = $_POST["message"];
+
+        sendEmail($askerName, $askerEmail, $askerMessage);
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,23 +47,23 @@
     <img src="../../assets/imgs/contact/smile.gif" id="smile_gif">
     <h2><?php echo $doYouHaveQ; ?></h2>
     <div class="contact_form_div">
-        <form>
+        <form method="post">
             <div class="contact_form_div_in">
                 <div class="name_div">
                     <label for="nameLabel"><?php echo $name; ?></label><br>
-                    <input type="text" id="nameLabel" class="form_field"><br>
+                    <input type="text" id="nameLabel" class="form_field" name="nameField"><br>
                 </div>
                 <div class="email_div">
                     <label for="emailLabel"><?php echo $email; ?></label><br>
-                    <input type="email" id="emailLabel" class="form_field"><br>
+                    <input type="email" id="emailLabel" class="form_field" name="emailField"><br>
                 </div>
                 <br>
 
                 <label for="messageArea"><?php echo $message; ?></label><br>
-                <textarea id="messageArea" rows="15" class="form_field">
+                <textarea id="messageArea" rows="15" class="form_field" name="message">
 
                 </textarea><br>
-                <input type="button" id="sendButton" value="<?php echo $send; ?>" class="form_button">
+                <input type="submit" id="sendButton" value="<?php echo $send; ?>" class="form_button" name="send">
             </div>
         </form>
     </div>

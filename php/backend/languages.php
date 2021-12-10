@@ -1,10 +1,10 @@
 <?php
     session_start();
     $enJson = file_get_contents("../../assets/text/en.json");
-    //$skJson = file_get_contents("../../assets/text/sk.json");
+    $skJson = file_get_contents("../../assets/text/sk.json");
     $languages = array(
         'en' => json_decode($enJson, true),
-        //'sk' => json_decode($skJson, true)
+        'sk' => json_decode($skJson, true)
     );
 
     $currentLanguage = "en";
