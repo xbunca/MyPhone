@@ -51,16 +51,16 @@
             <div class="contact_form_div_in">
                 <div class="name_div">
                     <label for="nameLabel"><?php echo $name; ?></label><br>
-                    <input type="text" id="nameLabel" class="form_field" name="nameField"><br>
+                    <input type="text" id="nameLabel" class="form_field" name="nameField" required><br>
                 </div>
                 <div class="email_div">
                     <label for="emailLabel"><?php echo $email; ?></label><br>
-                    <input type="email" id="emailLabel" class="form_field" name="emailField"><br>
+                    <input type="email" id="emailLabel" class="form_field" name="emailField" required><br>
                 </div>
                 <br>
 
                 <label for="messageArea"><?php echo $message; ?></label><br>
-                <textarea id="messageArea" rows="15" class="form_field" name="message">
+                <textarea id="messageArea" rows="15" class="form_field" name="message" required>
 
                 </textarea><br>
                 <input type="submit" id="sendButton" value="<?php echo $send; ?>" class="form_button" name="send">

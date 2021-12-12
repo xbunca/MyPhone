@@ -35,7 +35,7 @@
             <div class="review_top_form">
                 <div class="name_form_div">
                     <label for="nameField"><?php echo $name; ?></label><br>
-                    <input type="text" id="nameField" class="form_field" name="nameField">
+                    <input type="text" id="nameField" class="form_field" name="nameField" required>
                 </div>
                 <div class="image_form_div">
                     <label for="reviewImage"><?php echo $profilePicture; ?></label><br>
@@ -46,10 +46,10 @@
             <div class="review_bottom_form">
                 <div class="review_bottom_form_moving">
                     <label for="reviewRating"><?php echo $rating; ?></label>
-                    <input type="number" id="reviewRating" max="5" min="1" value="1" class="form_field" name="reviewRating">
+                    <input type="number" id="reviewRating" max="5" min="1" value="1" class="form_field" name="reviewRating" required>
 
                     <br><label for="reviewArea"><?php echo $review; ?></label><br>
-                    <textarea id="reviewArea" rows="15" class="form_field" name="reviewArea">
+                    <textarea id="reviewArea" rows="15" class="form_field" name="reviewArea" required>
 
                 </textarea><br>
                     <input type="submit" id="makeButton" value="<?php echo $make; ?>" class="form_button" name="make">
